@@ -14,6 +14,14 @@ import org.junit.Test;
  */
 public class FactorialTest {
     
+     //check cem có th ngoại lệ hay ko khi đua data cà chớn!
+    @Test(expected = IllegalArgumentException.class)
+    public void checkFactorialGivenWrongArgumentThrowsException(){
+        // ta ko dung ham assertEquals( 2 value so sanh)
+        // ngoai le chi co the thay no xh hay ko???
+        MathUtil.getFactorial(-5);
+    }
+    
     @Test
     public void checkFactorialGivenRightArgumentReturnsWell() {
         
@@ -25,13 +33,7 @@ public class FactorialTest {
         Assert.assertEquals(1, MathUtil.getFactorial(0));
     }
     
-    //check cem có th ngoại lệ hay ko khi đua data cà chớn!
-    @Test(expected = IllegalArgumentException.class)
-    public void checkFactorialGivenWrongArgumentThrowsException(){
-        // ta ko dung ham assertEquals( 2 value so sanh)
-        // ngoai le chi co the thay no xh hay ko???
-        MathUtil.getFactorial(-5);
-    }
+  
 }
 
 //qyu uoc xanh do

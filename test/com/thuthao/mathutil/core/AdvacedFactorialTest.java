@@ -5,6 +5,7 @@
  */
 package com.thuthao.mathutil.core;
 
+import static com.thuthao.mathutil.core.MathUtil.getFactorial;
 import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -42,13 +43,13 @@ public class AdvacedFactorialTest {
     // ta gọi là testing kiểu tham số hóa
     // parameterzed testing
     
-    @Parameter (value = 0)
+    @Parameter (value = 0) //map cột 0 của tập data
     public int input;
     @Parameter (value = 1)
     public long expected;
     
     @Test
     public void checkFactorialGivenRightArgumentReturnsWell() {
-        Assert.assertEquals(expected, MathUtil.getFactorial(input));
+        Assert.assertEquals(expected, getFactorial(input));
     }
 }
