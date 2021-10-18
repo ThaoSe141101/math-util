@@ -1,3 +1,5 @@
+[![Math-Util with CI | © 2021 by Thu.Thao](https://github.com/ThaoSe141101/math-util/actions/workflows/math-util-ci.yml/badge.svg)](https://github.com/ThaoSe141101/math-util/actions/workflows/math-util-ci.yml)
+
 # Welcom to Math-Util repository
 
 ### You will find in this repo the following stuff:
